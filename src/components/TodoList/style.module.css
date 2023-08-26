@@ -13,6 +13,7 @@
     text-indent: 10px;
     font-size: 18px;
     font-weight: 400;
+    transition: all .3s;
 }
 .input:focus {
     outline: none;
@@ -29,11 +30,18 @@
   border-radius: 0 20px 20px 0;
   font-size: 18px;
   color: #fff;
+  transition: all .3s;
+  
 }
 
 .submitBtn:hover {
   font-size: 20px;
   transition: all .3s;
+}
+
+.submitBtn:disabled {
+    background-color: #b4b4b4;
+    transition: all .3s;
 }
 
 .todoList {
@@ -48,8 +56,9 @@
     height: 60px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    gap: 20px;
     padding: 0 30px 0 30px;
     font-size: 18px;
 }
@@ -58,9 +67,12 @@
     background-color: transparent;
     color: #fff;
     font-size: 18px;
+    transition: all .3s;
+    margin-left: auto;
 }
 
 .delete:hover {
     color: #CC166D;
     transition: all .3s;
 }
+
