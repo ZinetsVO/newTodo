@@ -48,6 +48,8 @@ const TodoList = () => {
     setTasks(updatedTask);
   };
 
+  console.log(tasks);
+
   return (
     <div className="container">
       <form className={css.nav}>
@@ -76,7 +78,7 @@ const TodoList = () => {
               checked={el.done}
               type="checkBox"
             />
-            <p>{el.text}</p>
+            <p className={ el.done? css.checkedTodoText : css.todoText}>{el.text}</p>
             <button onClick={() => handleDeleteTask(i)} className={css.delete}>
               X
             </button>
