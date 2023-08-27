@@ -43,8 +43,11 @@ const TodoList = () => {
   };
 
   const handleDeleteTask = (index) => {
-    const updatedTask = tasks.filter((_, item) => item !== index);
-    setTasks(updatedTask);
+    const del = confirm("Do you want to delete this task?")
+    if (del) {
+      const updatedTask = tasks.filter((_, item) => item !== index);
+      setTasks(updatedTask);
+    }
   };
 
   const handleToggleChange = (index) => {
