@@ -69,6 +69,7 @@
 .checkedTodoText {
     padding-right: 20px;
     text-decoration: line-through;
+    text-decoration-color: #CC166D;
 }
 
 .delete {
