@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import css from "./style.module.css";
 
 const TodoList = () => {
   const [input, setInput] = useState("");
-  const [tasks, setTasks] = useState([
-    {
-      text: "defaultTodo",
-      done: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
+  useEffect(() => {
+    const storedTodo = JSON.parse(localStorage.getItem('todoTasks' || []));
+    setTasks(storedTodo)
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('todoTasks', JSON.stringify(tasks))
+  }, [tasks])
+  
+  
 
   const inputHandler = (e) => {
     setInput(e.target.value);
