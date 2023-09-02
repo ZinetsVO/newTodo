@@ -27,19 +27,30 @@ body {
   --text: 20px;
 }
 
-@media screen and (min-width: 1224px) {
+
+
+
+
+
+@media screen and (min-width: 320px) {
   :root {
-   
-    --text: 20px;
+ 
+    --text: 14px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 375px) {
   :root {
-   
-    --text: 20px;
+ 
+    --text: 16px;
   }
+}
 
+@media screen and (min-width: 480px) {
+  :root {
+
+    --text: 18px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -49,20 +60,22 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  :root {
 
-    --text: 20px;
+@media screen and (min-width: 1024px) {
+  :root {
+   
+    --text: 22px;
   }
+
 }
 
-@media screen and (min-width: 375px) {
+
+@media screen and (min-width: 1224px) {
   :root {
- 
-    --text: 14px;
+   
+    --text: 22px;
   }
 }
-
 
 body {
   /* font-family: 'Poppins', sans-serif; */
@@ -98,7 +111,7 @@ button {
   cursor: pointer;
 }
 
-form, label, input {
+form, label, input, p, input {
   font-size: var(--text);
 }
 
