@@ -51,7 +51,6 @@
 }
 
 .todoItem {
-    background-color: #fff;
     background-color: #202020;
     border-radius: 20px;
     display: flex;
@@ -59,16 +58,18 @@
     align-items: center;
     gap: 20px;
     padding: 10px 30px;
-    font-size: 18px;
 }
 
 .todoText {
     padding-right: 20px;
+    max-width: 90%;
+    word-break: break-all;
 }
 
 .checkedTodoText {
     padding-right: 20px;
     text-decoration: line-through;
+    word-break: break-all;
 }
 
 .delete {
@@ -83,4 +84,5 @@
     color: #CC166D;
     transition: all .3s;
 }
+
 
